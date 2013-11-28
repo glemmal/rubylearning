@@ -3,7 +3,8 @@
 describe "A simple method definition" do
 	it "it defines an void method an check return value for nil" do
 		def printHello()
-			puts "Hello"
+			# puts "Hello"
+			nil
 		end
 		expect(printHello).to eq nil
 	end
@@ -20,11 +21,11 @@ describe "A simple method definition" do
 		def sumOfA(a,b)
 			a+b
 		end
-		expect(sumOfA(3,2)).to eq 5		
+		expect(sumOfA(3,2)).to eq 5
 	end
 
-	it "it defines a class with an instance variable and calls an class method"
-		class Test			
+	it "it defines a class with an instance variable and calls an class method" do
+		class Test
 			def initialize(name="Max Mustermann")
 				@name = name
 			end
@@ -35,5 +36,6 @@ describe "A simple method definition" do
 		end
 
 		c = Test.new
-		#expect(c.getName).to eq "Max Mustermann"
+		expect(c.getName).to eq "Max Mustermann"
+	end
 end

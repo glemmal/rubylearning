@@ -8,7 +8,7 @@ describe 'checkArray' do
 	it 'gehversuch' do
 		emptyArry = Array.new
 		Array.new(3, true)
-		expect(emptyArry[2]).to be_true
+		expect(emptyArry[2]).to be_nil
 	end
 end
 
