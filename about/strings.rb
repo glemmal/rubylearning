@@ -27,6 +27,4 @@ describe "A Ruby String" do
     x = "foo".upcase
     expect(x).to eq "FOO"
   end
-
-  
 end
