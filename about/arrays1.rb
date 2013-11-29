@@ -14,8 +14,9 @@ describe "ArrayTest" do
 	end
 	
 	it "deletes" do
-		arrayX.delete(4);
+		arrayX.delete(3);
 		expect(arrayX[4]).to eq(nil)
+		expect(arrayX[3]).to eq(4)
 	end
 	
 	it "writes" do
