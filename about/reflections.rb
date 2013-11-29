@@ -1,9 +1,9 @@
 describe "Test" do
 it "object responds to method" do
-class Test
-def sayhello
-h = "hello"
-end
+	class Test
+		def sayhello
+		h = "hello"
+	end
 end
 	test = Test.new
 	expect(test.respond_to?("sayhello")).to eq true
