@@ -22,5 +22,15 @@ describe "ArrayTest" do
 		string = arrayStr[0] + arrayStr[1] + arrayStr[2]
 		expect(string).to eq("NameNachnameVorname")
 	end
+	
+	it "change" do
+		arrayStr[2] = "asdfg"
+		expect(arrayStr[2]).to eq("asdfg")
+	end
+	
+	it "gives you length" do
+		laenge = arrayX.length
+		expect(laenge).to eq(4)
+	end
 
 end
