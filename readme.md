@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/bkleinen/rubylearning.png?branch=master)](https://travis-ci.org/bkleinen/rubylearning)
+
 # Rubylearning Project
 
 This is a project that illustrates learning a programming language by writing unit tests.
