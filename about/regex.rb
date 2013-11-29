@@ -28,11 +28,22 @@ describe "A Ruby class" do
 		#Can you show me the vowels in my string?
 		s2 = "I am a text with some vowels in it"
 		matchVowels = s2.match(/[aeiouAEIOU]/) #Returns an match-object, that
-		#can be addressed like an array
-		expect(matchVowels[0]).to eq "I"
+		#can be addressed like an array, but only contains the first match!
+		expect(matchVowels[0]).to eq "I"		
+
+		r = /(\w*).(\w*)/ #This regex finds character splitted by a dot
+		s3 = "IchBin.EinText" #This is a text divided by a dot
+		matchR = s3.match(r) #Match the string and get the matchR-match-object
+		expect(matchR[0]).to eq "IchBin.EinText" #The first contains the whole matched string (if it matched)
+		expect(matchR[1]).to eq "IchBin" #The first entry contains the whole right part
+		expect(matchR[2]).to eq "EinText" #The second entry contains the whole left part		
 
 		#I am not sure if there is an Apple or an Orange in the string
-		s3 = "It's an Apple"
-		expect(s3).to match(/[Apple|Orange]/)
+		s4 = "It's an Apple"
+		expect(s4).to match(/(Apple|Orange)/)
+
+		#What happens if match fails?
+		s5 = "I am a string, that is never going to be matched"
+		expect(s5.match(/[0-9]/)).to eq nil #nil will be returned if match failed
 	end
 end
