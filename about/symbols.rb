@@ -10,7 +10,7 @@ class Symbols
 		expect(rubSym1.object_id).to eq(rubSym2.object_id)
 		end
 		
-		it "tests if the object ids of to strings with same value are equal" do
+		it "tests if the object ids of to strings with same value are not equal" do
 		expect(rubString1.object_id).to_not eq(rubString2.object_id)
 		end
 		
