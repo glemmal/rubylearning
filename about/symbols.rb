@@ -17,6 +17,10 @@ class Symbols
 		it "tests if the string to symbol method gives out the symbol" do
 		expect(rubString1.to_sym).to eq(rubSym1)
 		end
+
+		it "tests if the string to symbol and compared symbol have the same object_id" do
+		expect(rubString1.to_sym.object_id).to eq(rubSym1.object_id)
+		end
 		
 		it "tests if the symbol to string method gives out the symbol" do
 		expect(rubSym1.to_s).to eq(rubString1)
