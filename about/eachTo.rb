@@ -22,7 +22,7 @@ describe "Loops" do
 	
 	#Second Test
 	it "Test02" do
-	#iterating from one value to another (in Java this would be for (int i = 1, i <= 10, i++)
+	#iterating from one value to another (in Java this would be "for (int i = 1, i <= 10, i++)")
 	
 	sum = 0
 	1.upto(10) 	{ |i|
