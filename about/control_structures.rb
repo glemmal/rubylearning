@@ -42,7 +42,7 @@ describe "Testing the Ruby control structures;" do
 		b = 10
 		
 		for a in (0..b)
-			puts a
+			# do stuff
 		end
 		
 		expect(a).to eq(10)
