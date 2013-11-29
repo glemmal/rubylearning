@@ -38,4 +38,36 @@ describe "A simple method definition" do
 		c = Test.new
 		expect(c.getName).to eq "Max Mustermann"
 	end
+
+		it "calculates the sum" do 
+		def sum(a, b)
+			a + b
+		end
+
+		expect(sum(4, 3)).to eq 7
+	end
+
+	it "subtracts two numbers" do 
+		def sub(a, b)
+			a - b
+		end
+
+		expect(sub(4, 3)).not_to eq 0
+	end
+
+	it "mulitplies" do 
+		def mul(a, b)
+			a * b
+		end
+
+		expect(mul(2, 3)).not_to eq 5
+	end
+
+	it "devides" do 
+		def dev(a, b)
+			a / b
+		end
+
+		expect(dev(4, 2)).to eq 2
+	end
 end
