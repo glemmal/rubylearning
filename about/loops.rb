@@ -1,3 +1,4 @@
+
 describe "While-loop test" do 
 	it "Tests if the variable gets counted to expected value in while loop" do
 		i=0
@@ -58,3 +59,4 @@ describe "Next test in for-loop" do
 		expect(a).to eq(4)
 	end
 end
+

@@ -1,7 +1,7 @@
-describe "Hashes" do 
+describe "Hashes" do
 
 	it "test the value on a key" do
-		
+
 		firstHash = {"2hoch2" => 4, "2hoch3" => 8, "2hoch4" => 16, "2hoch5" => 32}
 
 		expect(firstHash["2hoch2"]).to eq 4
@@ -19,13 +19,12 @@ describe "Hashes" do
 		secondHash["hallo"] = 89438743284
 
 		expect(secondHash.length).to eq 1
-		
+
 		secondHash["harry"] = 92147938
 
-		expect(secondHash.length).to eq 3
+		expect(secondHash.length).to eq 2
 	end
 
-	it ""
 
 
 end
