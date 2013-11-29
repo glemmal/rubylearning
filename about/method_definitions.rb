@@ -39,7 +39,15 @@ describe "A simple method definition" do
 		expect(c.getName).to eq "Max Mustermann"
 	end
 
-		it "calculates the sum" do 
+	it "checks for an array as parameter" do
+		def array_as_param(val)
+			val.kind_of?(Array)
+		end
+		expect(array_as_param("test")).to eq false
+		expect(array_as_param(["s","t","r", "i","n","g"])).to eq true
+	end
+
+	it "calculates the sum" do 
 		def sum(a, b)
 			a + b
 		end
