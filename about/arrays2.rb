@@ -6,16 +6,17 @@ describe 'checkArray' do
 	end
 
 
-	it 'lenght' do
-		arraylength = Array.new(3)
-		expect(arraylength.length).to eq(3)
+	it "new creates an Array with nils of given length" do
+		array = Array.new(3)
+		expect(array.length).to eq(3)
+		expect(array).to eq [nil,nil,nil]
 	end
 
 
 	it 'fill' do
-		# => true, true, true
 		booleanArray = Array.new(3, true)
 		expect(booleanArray[2]).to be_true
+		expect(booleanArray).to eq [true, true, true]
 	end
 
 
@@ -24,10 +25,12 @@ describe 'checkArray' do
 		namen += ["Kaj"]
 		namen -= ["Felix"]
 		namen *= 2
-		
+
 		expect(namen.length).to eq(6)
 		expect(namen[2]).to eq("Kaj")
 		expect(namen[4]).to eq("Paul")
+		# äh - wie sieht das array namen jetzt aus??
+		expect(namen).to eq ["Jonas","Paul","Kaj","Jonas","Paul","Kaj"]
 	end
 end
 
