@@ -1,4 +1,6 @@
 describe "Loops" do
+
+	#First test
 	it "Test01" do
 		testArray = ["Test1", "Test2", "Test3"] #Creating an array with three strings
 		i = 0
@@ -18,6 +20,7 @@ describe "Loops" do
 		}
 	end
 	
+	#Second Test
 	it "Test02" do
 	#iterating from one value to another (in Java this would be for (int i = 1, i <= 10, i++)
 	
