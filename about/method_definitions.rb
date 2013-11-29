@@ -63,7 +63,7 @@ describe "A simple method definition" do
 		expect(sub(4, 3)).not_to eq 0
 	end
 
-	it "mulitplies" do 
+	it "mulitplies two numbers" do 
 		def mul(a, b)
 			a * b
 		end
@@ -71,7 +71,7 @@ describe "A simple method definition" do
 		expect(mul(2, 3)).not_to eq 5
 	end
 
-	it "devides" do 
+	it "devides two numbers" do 
 		def dev(a, b)
 			a / b
 		end
