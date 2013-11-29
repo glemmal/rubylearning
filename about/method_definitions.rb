@@ -9,7 +9,7 @@ describe "A simple method definition" do
 		expect(printHello).to eq nil
 	end
 
-	it "defi" do
+	it "definition with a default value for the parameter" do
 		def printMessage(msg="test")
 			msg
 		end
@@ -24,7 +24,7 @@ describe "A simple method definition" do
 		expect(sumOfA(3,2)).to eq 5
 	end
 
-	it "it defines a class with an instance variable and calls an class method" do
+	it "it defines a class with an instance variable and calls the constructor" do
 		class Test
 			def initialize(name="Max Mustermann")
 				@name = name
@@ -44,10 +44,10 @@ describe "A simple method definition" do
 			val.kind_of?(Array)
 		end
 		expect(array_as_param("test")).to eq false
-		expect(array_as_param(["s","t","r", "i","n","g"])).to eq true
+		expect(array_as_param(["s","t","r","i","n","g"])).to eq true
 	end
 
-	it "calculates the sum" do 
+	it "calculates the sum" do
 		def sum(a, b)
 			a + b
 		end
@@ -55,7 +55,7 @@ describe "A simple method definition" do
 		expect(sum(4, 3)).to eq 7
 	end
 
-	it "subtracts two numbers" do 
+	it "subtracts two numbers" do
 		def sub(a, b)
 			a - b
 		end
@@ -63,7 +63,7 @@ describe "A simple method definition" do
 		expect(sub(4, 3)).not_to eq 0
 	end
 
-	it "mulitplies two numbers" do 
+	it "multiplies two numbers" do
 		def mul(a, b)
 			a * b
 		end
@@ -71,11 +71,11 @@ describe "A simple method definition" do
 		expect(mul(2, 3)).not_to eq 5
 	end
 
-	it "devides two numbers" do 
-		def dev(a, b)
+	it "divides two numbers" do
+		def div(a, b)
 			a / b
 		end
 
-		expect(dev(4, 2)).to eq 2
+		expect(div(4, 2)).to eq 2
 	end
 end
