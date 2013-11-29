@@ -12,10 +12,22 @@ describe 'checkArray' do
 	end
 
 
-	it 'array fill' do
+	it 'fill' do
 		# => true, true, true
 		booleanArray = Array.new(3, true)
 		expect(booleanArray[2]).to be_true
+	end
+
+
+	it 'arithmetik' do
+		namen = ["Jonas", "Paul", "Felix"]
+		namen += ["Kaj"]
+		namen -= ["Felix"]
+		namen *= 2
+		
+		expect(namen.length).to eq(6)
+		expect(namen[2]).to eq("Kaj")
+		expect(namen[4]).to eq("Paul")
 	end
 end
 
