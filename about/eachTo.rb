@@ -12,11 +12,11 @@ describe "Loops" do
 			if i == 0
 				# this usage of expect does not do what you might expect!!!
 				# see changes in https://github.com/bkleinen/rubylearning/commit/41263be933a769f4559d0596a68ae6476ed77403
-				expect(testString=="Test1")
+				expect(testString).to eq "Test1"
 			elsif i == 1
-				expect(testString == "Test2")
+				expect(testString).to eq "Test2"
 			elsif i == 2
-				expect(testString != "Test3")
+				expect(testString).to eq "Test3"
 			end
 			i = i+1
 		}
@@ -30,6 +30,6 @@ describe "Loops" do
 	1.upto(10) 	{ |i|
 		sum += i
 	}
-	expect(sum == 56)
+	expect(sum).to eq 55
 	end
 end
