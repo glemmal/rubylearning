@@ -10,8 +10,6 @@ describe "Loops" do
 		 #Important: |testString| has to be in the same line as "testArray.each {"!
 		testArray.each 	{ |testString|
 			if i == 0
-				# this usage of expect does not do what you might expect!!!
-				# see changes in https://github.com/bkleinen/rubylearning/commit/41263be933a769f4559d0596a68ae6476ed77403
 				expect(testString).to eq "Test1"
 			elsif i == 1
 				expect(testString).to eq "Test2"
