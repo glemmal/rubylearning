@@ -47,4 +47,13 @@ describe "About RSpec Build-in Matchers" do
     expect { raise MyError.new }.to raise_error(MyError)
   end
 
+  it "what happens if you just use expect" do
+    # this looks reasonable
+    expect(1 == 1)
+    # but this works, too
+    expect(1 == 2)
+    # in fact, all that does is returning an
+    expect(expect(1 == 3).class).to eq RSpec::Expectations::ExpectationTarget
+  end
+
 end
