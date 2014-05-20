@@ -2,41 +2,41 @@
 
 describe "A simple method definition" do
 	it "it defines a void method an checks the return value for nil" do
-		def printHello()
+		def print_hello()
 			# puts "Hello"
 			nil
 		end
-		expect(printHello).to eq nil
+		expect(print_hello).to eq nil
 	end
 
 	it "definition with a default value for the parameter" do
-		def printMessage(msg="test")
+		def print_message(msg="test")
 			msg
 		end
-		expect(printMessage).to eq "test"
-		expect(printMessage("new message")).to eq "new message"
+		expect(print_message).to eq "test"
+		expect(print_message("new message")).to eq "new message"
 	end
 
 	it "it defines and calls the method" do
-		def sumOfA(a,b)
+		def sum_of_a(a,b)
 			a+b
 		end
-		expect(sumOfA(3,2)).to eq 5
+		expect(sum_of_a(3,2)).to eq 5
 	end
 
 	it "it defines a class with an instance variable and calls the constructor" do
-		class Test
+		class test
 			def initialize(name="Max Mustermann")
 				@name = name
 			end
 
-			def getName()
+			def get_name()
 				@name
 			end
 		end
 
-		c = Test.new
-		expect(c.getName).to eq "Max Mustermann"
+		c = test.new
+		expect(c.get_name).to eq "Max Mustermann"
 	end
 
 	it "checks for an array as parameter" do
