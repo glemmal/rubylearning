@@ -4,7 +4,7 @@ describe "Ruby Comparision Operators" do
       # this is always false as strings are mutable and thus cannot be interned
       # as in java.
       expect("hallo".equal?("hallo")).to be_false
-      # therefore, use symbols where appropriate - there's only one instance.
+      # therefore, use type symbol where appropriate - there's only one instance.
       expect(:hallo.equal?(:hallo)).to be_true
       expect(3.equal?(3)).to be_true
     end
