@@ -1,7 +1,7 @@
 # this is a test for method definitions
 
 describe "A simple method definition" do
-	it "it defines an void method an check return value for nil" do
+	it "it defines a void method an checks the return value for nil" do
 		def printHello()
 			# puts "Hello"
 			nil
@@ -60,7 +60,7 @@ describe "A simple method definition" do
 			a - b
 		end
 
-		expect(sub(4, 3)).not_to eq 0
+		expect(sub(4, 3)).not_to eq 1
 	end
 
 	it "multiplies two numbers" do
@@ -68,7 +68,7 @@ describe "A simple method definition" do
 			a * b
 		end
 
-		expect(mul(2, 3)).not_to eq 5
+		expect(mul(2, 3)).not_to eq 6
 	end
 
 	it "divides two numbers" do
