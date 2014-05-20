@@ -12,7 +12,7 @@ describe "A Ruby String" do
 
   it "returns fifth character" do
     x = "foobar"
-    expect(x[5]).to eq "r"
+    expect(x[4]).to eq "a"
   end
 
   it "returns string 6 times" do
@@ -27,4 +27,25 @@ describe "A Ruby String" do
     x = "foo".upcase
     expect(x).to eq "FOO"
   end
+
+  it "returns string in lowercase letters" do
+    x = "FOO".downcase
+    expect(x).to eq "foo"
+  end
+
+  it "comparison of two strings - right string has less characters" do
+      x = "abcdef" <=> "abcde"
+      expect(x).to eq 1
+  end
+
+  it "comparison of strings with no differences" do
+    x = "abcdef" <=> "abcdef"
+    expect(x).to eq 0
+  end
+
+  it "comparison of two strings - right string has more characters" do
+    x = "abcde" <=> "abcdefg" 
+    expect(x).to eq -1
+  end
+
 end
