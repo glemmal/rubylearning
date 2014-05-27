@@ -1,12 +1,14 @@
-describe "A File IO" do
+describe "File IO" do
 
   filename  = "test.txt"
   renamed   = "test_renamed.txt"
 
-  it "creates new file" do
-    File.new(filename, "w")
-    expect(File.exists?(filename)).to be true
+  after(:each) do
+    [filename,renamed].each do |fn|
+      File.delete(fn) if File.exists?(fn)
+    end
   end
+
 
   it "write content to the file" do
     File.open(filename, "w+") do |file|
@@ -17,13 +19,22 @@ describe "A File IO" do
     end
   end
 
-  it "renames file" do
-    File.rename(filename, renamed)
-    expect(File.exists?(renamed)).to be true
-  end
+  describe "with file existing" do
+    before(:each) do
+      File.new(filename, "w")
+    end
+    it "creates new file" do
+      expect(File.exists?(filename)).to be true
+    end
 
-  it "deletes file" do
-    File.delete(renamed)
-    expect(File.exists?(renamed)).to be false
+    it "renames file" do
+      File.rename(filename, renamed)
+      expect(File.exists?(renamed)).to be true
+    end
+
+    it "deletes file" do
+      File.delete(filename)
+      expect(File.exists?(renamed)).to be false
+    end
   end
 end
