@@ -1,5 +1,5 @@
 describe "A File IO" do
-  
+
   filename  = "test.txt"
   renamed   = "test_renamed.txt"
 
@@ -9,11 +9,12 @@ describe "A File IO" do
   end
 
   it "write content to the file" do
-    file = File.open(filename, "w+")
-    file.puts("This test line 1")
-    file.rewind
-    expect(file.readline).to eq "This test line 1\n"
-    file.close
+    File.open(filename, "w+") do |file|
+      file.puts("This test line 1")
+      file.rewind
+      expect(file.readline).to eq "This test line 1\n"
+     # file.close
+    end
   end
 
   it "renames file" do
