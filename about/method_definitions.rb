@@ -25,7 +25,7 @@ describe "A simple method definition" do
 	end
 
 	it "it defines a class with an instance variable and calls the constructor" do
-		class test
+		class Test
 			def initialize(name="Max Mustermann")
 				@name = name
 			end
@@ -35,7 +35,7 @@ describe "A simple method definition" do
 			end
 		end
 
-		c = test.new
+		c = Test.new
 		expect(c.get_name).to eq "Max Mustermann"
 	end
 
@@ -60,7 +60,7 @@ describe "A simple method definition" do
 			a - b
 		end
 
-		expect(sub(4, 3)).not_to eq 1
+		expect(sub(4, 3)).to eq 1
 	end
 
 	it "multiplies two numbers" do
@@ -68,7 +68,7 @@ describe "A simple method definition" do
 			a * b
 		end
 
-		expect(mul(2, 3)).not_to eq 6
+		expect(mul(2, 3)).to eq 6
 	end
 
 	it "divides two numbers" do
