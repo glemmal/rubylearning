@@ -15,7 +15,7 @@ describe 'checkArray' do
 
 	it 'fill' do
 		booleanArray = Array.new(3, true)
-		expect(booleanArray[2]).to be_true
+		expect(booleanArray[2]).to eq(true)
 		expect(booleanArray).to eq [true, true, true]
 	end
 

@@ -24,8 +24,8 @@ describe "About RSpec Build-in Matchers" do
   it "has predicate matchers" do
     empty_array = []
     expect(empty_array).to be_empty
-    # which is the same as
-    expect(empty_array.empty?).to be_true
+    # which is the sam eas
+    expect(empty_array.empty?).to eq(true)
   end
 
   it "predicate matchers work for arbitrary predicates" do

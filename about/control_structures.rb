@@ -10,7 +10,7 @@ describe "Testing the Ruby control structures;" do
       b = false
     end
 
-    expect(b).to be_true
+    expect(b).to eq(true)
   end
 
   it "are unless branches working?" do
