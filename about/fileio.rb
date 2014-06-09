@@ -5,6 +5,7 @@ describe "File IO" do
 
   after(:each) do
     [filename,renamed].each do |fn|
+      @file.close if @file
       File.delete(fn) if File.exists?(fn)
     end
   end
@@ -21,7 +22,7 @@ describe "File IO" do
 
   describe "with file existing" do
     before(:each) do
-      File.new(filename, "w")
+      @file = File.new(filename, "w")
     end
     it "creates new file" do
       expect(File.exists?(filename)).to be true
@@ -34,7 +35,7 @@ describe "File IO" do
 
     it "deletes file" do
       File.delete(filename)
-      expect(File.exists?(renamed)).to be false
+      expect(File.exists?(filename)).to be false
     end
   end
 end
