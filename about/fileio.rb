@@ -1,14 +1,9 @@
 describe "File IO" do
 
-  filename  = "test.txt"
-  renamed   = "test_renamed.txt"
+  filename  = "temp/test.txt"
+  renamed   = "temp/test_renamed.txt"
 
-  after(:each) do
-    [filename,renamed].each do |fn|
-      @file.close if @file
-      File.delete(fn) if File.exists?(fn)
-    end
-  end
+
 
 
   it "write content to the file" do
@@ -16,14 +11,22 @@ describe "File IO" do
       file.puts("This test line 1")
       file.rewind
       expect(file.readline).to eq "This test line 1\n"
-     # file.close
     end
   end
 
-  describe "with file existing" do
+  describe "with file created and closed" do
     before(:each) do
       @file = File.new(filename, "w")
+      @file.close
     end
+    after(:each) do
+    [filename,renamed].each do |fn|
+      begin
+        File.delete(fn) if File.exists?(fn)
+      rescue IOError
+      end
+    end
+  end
     it "creates new file" do
       expect(File.exists?(filename)).to be true
     end
