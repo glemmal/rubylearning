@@ -3,7 +3,9 @@ describe "File IO" do
   filename  = "temp/test.txt"
   renamed   = "temp/test_renamed.txt"
 
-
+  before(:all) do
+    Dir.mkdir('temp') unless Dir.exists?('temp')
+  end
 
 
   it "write content to the file" do
