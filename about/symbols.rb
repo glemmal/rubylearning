@@ -1,11 +1,13 @@
-class Symbols
-	rubSym1 = :ruby
-	rubSym2 = :ruby
-	rubString1 = "ruby"
-	rubString2 = "ruby"
+
+
 	
-	describe Symbols do
+	describe "Symbols" do
 	
+		let(:rubSym1   ) {:ruby}
+	    let(:rubSym2   ) {:ruby}
+	    let(:rubString1) {"ruby"}
+	    let(:rubString2) {"ruby"}
+
 		it "tests if the object ids of to same symbols are equal" do
 		expect(rubSym1.object_id).to eq(rubSym2.object_id)
 		end
@@ -27,6 +29,6 @@ class Symbols
 		end
 	end
 	
-end
+
 
 

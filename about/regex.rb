@@ -6,8 +6,7 @@
 # http://rubular.com/
 
 describe "Regular Expressions" do
-	# hm. very nice examples, but it would have been better if you'd
-	# split it up with various examples, eg.
+	# WS2014 split it up with various examples, eg.
 	# it "can check if there are numbers in the string"
 	it "tests regex" do
 		s = "ichBinEinString1234"

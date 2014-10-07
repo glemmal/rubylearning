@@ -21,7 +21,7 @@ describe "A Ruby Class" do
     boat.name = "Pinguin"
     expect(boat.name).to eq "Pinguin"
   end
-
+#WS2014 split constructor and attr_accessor in two examples.
   it "has constructors and a shorthand for defining getters/setters" do
     class Boat
       attr_accessor :name, :length
@@ -34,7 +34,7 @@ describe "A Ruby Class" do
     expect(boat.name).to eq "Hib"
     expect(boat.length).to eq 4
   end
-
+#WS2014: split between class variables and methods and the number_of_instances
   it "can have class variables and methods" do
     class NotASingleton
       @@instances = 0

@@ -1,4 +1,5 @@
-
+# WS2014: adhere to ruby naming conventions.
+# this could use some better example names.
 describe 'checkArray' do
 	it 'initialisierung' do
 		normalArry = [1, 2, 3]

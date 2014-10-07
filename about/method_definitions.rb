@@ -1,4 +1,6 @@
-# this is a test for method definitions
+
+
+#WS2014 consolidate with method_returns.rb
 
 describe "A simple method definition" do
 	it "it defines a void method an checks the return value for nil" do
