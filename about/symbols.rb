@@ -1,5 +1,5 @@
 
-
+#WS2014 find a description about what symbols are.
 	
 	describe "Symbols" do
 	

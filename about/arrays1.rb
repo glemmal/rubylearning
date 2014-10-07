@@ -1,4 +1,5 @@
-
+# WS2014: this should be consolidated with the arrays2 file
+# WS2014: adhere to ruby naming conventions.
 describe "ArrayTest" do
 
 	arrayX = [0,1,2,3]

@@ -1,4 +1,5 @@
-
+# WS2014 consolidate with control_structures.rb 
+# remove "test" from example names
 describe "While-loop test" do 
 	it "Tests if the variable gets counted to expected value in while loop" do
 		i=0

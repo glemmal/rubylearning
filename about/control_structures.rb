@@ -1,6 +1,6 @@
 
 #WS2014 - rename examples - these are not intendet to be tests!
-#consolidate this with eachTo.rb and find better file names
+#consolidate this with eachTo.rb and loops.rb and find better file names
 describe "Testing the Ruby control structures;" do
   it "are if branches working?" do
 

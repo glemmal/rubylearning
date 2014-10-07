@@ -1,3 +1,5 @@
+#WS2014 add more reflections
+
 describe "Test" do
   it "object responds to method" do
   	class Test
