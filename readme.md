@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/bkleinen/rubylearning.png?branch=master)](https://travis-ci.org/bkleinen/rubylearning)
+[![Build Status](https://travis-ci.org/htw-imi-info3/rubylearning.png?branch=master)](https://travis-ci.org/htw-imi-info3/rubylearning)
 
 # Rubylearning Project
 
@@ -47,3 +47,15 @@ You can either run all tests with
 or individual files with
 
     rspec <filename>
+
+# Amend this project and share your changes!
+
+Please make amendmends to this project if you work through the ruby examples. The task for 
+WS2014 will be: add a link to the documentation for each topic. Also feel free to add things you find interesting, clarify things that were unclear to you etc. 
+
+On your way through it, you also practice using git and github to exchange source code.
+
+See and amend [git-commands.md](git-commands.md) for useful git commands.
+
+Please make sure that all examples pass before pushing to github - otherwise Travis will bite you!
+[https://travis-ci.org/htw-imi-info3/rubylearning](https://travis-ci.org/htw-imi-info3/rubylearning)
