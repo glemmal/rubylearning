@@ -7,20 +7,50 @@ This is a project that illustrates learning a programming language by writing un
 
 The Idea is to create a file for each concept, e.g.
 
-    classes.rb
-    method_definitions.rb
-    control_structures.rb
-    loops.rb
-    strings.rb
-    arrays.rb
-    hashes.rb
-    symbols.rb
-    iteration_idioms.rb # each, to
-    enumerator.rb # esp. map & inject in http://ruby-doc.org/core-2.0.0/Enumerable.html
-    regular_expressions.rb
-    reading_and_writing_files.rb
-    blocks_and_yield.rb # maybe just adapt https://github.com/neo/ruby_koans/blob/master/src/about_blocks.rb
-    reflection.rb # get method names, find out if an object responds to a method, send a message to an object where you have the method name in a string
+
+| File Name               | Team |
+| ------------------------|------|
+|arrays1.rb & arrays2.rb  |      |                
+|classes.rb               |      |   
+|control_structures.rb    |      |              
+|eachTo.rb                |      |  
+|enumerator.rb            |      |      
+|equality.rb              |      |    
+|fileio.rb                |      |  
+|hashes.rb                |      |  
+|loops.rb                 |      | 
+|method_definitions.rb    |      |              
+|method_returns.rb        |      |          
+|reflections.rb           |      |       
+|regex.rb                 |      | 
+|rspec_expectations.rb    |      |              
+|strings.rb               |      |   
+|symbols.rb               |      |   
+|yields-and-blocks.rb     |      |             
+
+
+
+# Things that can be added
+
+
+
+| File Name                   | Team |
+| ----------------------------|------|
+| reading_and_writing_files.rb|      |
+| duck_typing.rb              |      |
+| exceptions.rb               |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+
+
 
 ## Getting started
 
@@ -59,3 +89,9 @@ See and amend [git-commands.md](git-commands.md) for useful git commands.
 
 Please make sure that all examples pass before pushing to github - otherwise Travis will bite you!
 [https://travis-ci.org/htw-imi-info3/rubylearning](https://travis-ci.org/htw-imi-info3/rubylearning)
+
+# Ruby Learning Resources
+
+* [Differences when coming from Java](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/)
+* A need little tutorial on a [command line app](http://neurogami.com/content/neurogami-10_minutes_to_your_first_Ruby_app/)
+* (old Version of)[Pickaxe Book](http://ruby-doc.com/docs/ProgrammingRuby/)
